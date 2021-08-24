@@ -12,24 +12,37 @@ class Calculator {
     this.a = a;
     this.b = b;
   }
-  
-  add (a, b) {
-    return a + b;
+
+  add() {
+    if (!this.a || !this.b) {
+      throw new Error('Please enter the missing parameter');
+    }
+    return this.a + this.b;
   };
 
-  subtract(a, b) {
-    return a - b;
+  subtract() {
+    if (!this.a || !this.b) {
+      throw new Error('Please enter the missing parameter');
+    }
+    return this.a - this.b;
   }
 
-  divide(a, b) {
-    return a / b;
+  divide() {
+    if (!this.a || !this.b) {
+      throw new Error('Please enter the missing parameter');
+    }
+    return this.a / this.b;
   }
 
-  multiply(a, b) {
-    return a * b;
+  multiply() {
+    if (!this.a || !this.b) {
+      throw new Error('Please enter the missing parameter');
+    }
+    return this.a * this.b;
   }
 }
 
 
 exports.stringLength = stringLength;
 exports.reverseString = reverseString;
+exports.Calculator = Calculator;
