@@ -7,5 +7,8 @@ describe('My capitalize function', () => {
   });
   it('throws error if you try to put wrong type of input', () => {
     expect(() => capitalize(644)).toThrow('Please enter the accurate input')
+  });
+  it('throws error if you don\'t supply argument', () => {
+    expect(() => capitalize()).toThrow('Please enter the missing parameter')
   })
 });
