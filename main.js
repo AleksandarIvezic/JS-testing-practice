@@ -55,6 +55,9 @@ class Calculator {
 }
 
 const capitalize = (string) => {
+  if (typeof string !== 'string') {
+    throw new Error('Please enter the accurate input');
+  }
   return (string.charAt(0).toUpperCase() + string.slice(1));
 }
 
