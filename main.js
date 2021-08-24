@@ -55,6 +55,9 @@ class Calculator {
 }
 
 const capitalize = (string) => {
+  if (!string) {
+    throw new Error('Please enter the missing parameter');
+  }
   if (typeof string !== 'string') {
     throw new Error('Please enter the accurate input');
   }
