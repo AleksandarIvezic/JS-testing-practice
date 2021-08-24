@@ -16,6 +16,11 @@ describe('Calculator add method', () => {
     const calculator = new Calculator();
     expect(()=> calculator.add()).toThrow('Please enter the missing parameter');
   });
+
+  test('Throws error if you put wrong type of input', () => {
+    const calculator = new Calculator('a', 4);
+    expect(()=> calculator.add()).toThrow('Please enter the accurate input');
+  });
 });
 
 describe('Calculator subtract method', () => {
@@ -32,6 +37,11 @@ describe('Calculator subtract method', () => {
   test('Throws error if both numbers are missing', () => {
     const calculator = new Calculator();
     expect(()=> calculator.subtract()).toThrow('Please enter the missing parameter');
+  });
+
+  test('Throws error if you put wrong type of input', () => {
+    const calculator = new Calculator('a', 4);
+    expect(()=> calculator.subtract()).toThrow('Please enter the accurate input');
   });
 });
 
@@ -50,6 +60,11 @@ describe('Calculator divide method', () => {
     const calculator = new Calculator();
     expect(()=> calculator.divide()).toThrow('Please enter the missing parameter');
   });
+
+  test('Throws error if you put wrong type of input', () => {
+    const calculator = new Calculator('a', 4);
+    expect(()=> calculator.divide()).toThrow('Please enter the accurate input');
+  });
 });
 describe('Calculator multiply method', () => {
   test('is multiplying 2 numbers', () => {
@@ -65,5 +80,10 @@ describe('Calculator multiply method', () => {
   test('Throws error if both numbers are missing', () => {
     const calculator = new Calculator();
     expect(()=> calculator.multiply()).toThrow('Please enter the missing parameter');
+  });
+
+  test('Throws error if you put wrong type of input', () => {
+    const calculator = new Calculator('a', 4);
+    expect(()=> calculator.multiply()).toThrow('Please enter the accurate input');
   });
 });

@@ -17,12 +17,18 @@ class Calculator {
     if (!this.a || !this.b) {
       throw new Error('Please enter the missing parameter');
     }
+    if (typeof this.a !== 'number' || typeof this.b !== 'number' ) {
+      throw new Error('Please enter the accurate input');
+    }
     return this.a + this.b;
   };
 
   subtract() {
     if (!this.a || !this.b) {
       throw new Error('Please enter the missing parameter');
+    }
+    if (typeof this.a !== 'number' || typeof this.b !== 'number' ) {
+      throw new Error('Please enter the accurate input');
     }
     return this.a - this.b;
   }
@@ -31,12 +37,18 @@ class Calculator {
     if (!this.a || !this.b) {
       throw new Error('Please enter the missing parameter');
     }
+    if (typeof this.a !== 'number' || typeof this.b !== 'number' ) {
+      throw new Error('Please enter the accurate input');
+    }
     return this.a / this.b;
   }
 
   multiply() {
     if (!this.a || !this.b) {
       throw new Error('Please enter the missing parameter');
+    }
+    if (typeof this.a !== 'number' || typeof this.b !== 'number' ) {
+      throw new Error('Please enter the accurate input');
     }
     return this.a * this.b;
   }
