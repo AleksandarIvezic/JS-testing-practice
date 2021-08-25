@@ -1,5 +1,4 @@
-const functions = require('./main');
-const reverseString = functions.reverseString;
+const { reverseString }= require('./main');
 
 it('Reverse string', () => {
   expect(reverseString("string")).toBe('gnirts');

@@ -1,5 +1,4 @@
-const functions = require('./main');
-const Calculator = functions.Calculator;
+const { Calculator } = require('./main');
 
 describe('Calculator add method', () => {
   test('is summing 2 numbers', () => {

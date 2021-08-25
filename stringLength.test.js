@@ -1,5 +1,4 @@
-const functions = require('./main');
-const stringLength = functions.stringLength;
+const { stringLength } = require('./main');
 
 it('Count length of string', () => {
   expect(stringLength("string")).toBe(6);
